@@ -1,0 +1,24 @@
+<view class="main">
+  <view class="head">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{movies}}" wx:for-index="index">
+        <swiper-item>
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="body">
+    <block wx:for="{{flowerList}}">
+      <view class="flower_item">
+        <view class="flower_item_pic">
+          <image src="{{item.pic}}"></image>
+        </view>
+        <view class="flower_item_text">
+          <view class="name">{{item.name}}</view>
+          <view class="price">{{item.price}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
