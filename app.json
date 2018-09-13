@@ -1,7 +1,7 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/classify/classify",
     "pages/main/main"
   ],
   "window":{
@@ -20,7 +20,7 @@
         "selectedIconPath": "pages/img/首页.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/classify/classify",
         "text": "设置",
         "iconPath": "pages/img/服务中.png",
         "selectedIconPath": "pages/img/服务中.png"
