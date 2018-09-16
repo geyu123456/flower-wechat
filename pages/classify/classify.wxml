@@ -1,8 +1,23 @@
-<view class="container">
+<view class="container_classify">
   <view class="nav_left">
     <block wx:for="{{navLeftItems}}">
       <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">{{item.tree.desc}}</view>
     </block>
   </view>
+   <view class="nav_right">
+   <block wx:for="{{navRightItems[curIndex].tree.flowerList}}">
+   <view class="flower_item">
+        <view class="flower_item_pic">
+          <image src="{{item.pic}}"></image>
+        </view>
+        <view class="flower_item_text">
+          <view class="name">{{item.name}}</view>
+          <view class="price">{{item.price}}</view>
+        </view>
+      </view>
+   </block>
+   
+  </view>
+  
   
 </view>

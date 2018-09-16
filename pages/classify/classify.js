@@ -10,9 +10,8 @@ Page({
   onLoad: function() {
     console.log(postdata.postList.data)
     this.setData({
-      navLeftItems: postdata.postList.data
-
-      
+      navLeftItems: postdata.postList.data,
+      navRightItems: postdata.postList.data
     }) ;
     console.log(this.data.navLeftItems)
   },
